@@ -1,34 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./CSS/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="./CSS/style.css"/>
     <script src="https://kit.fontawesome.com/85a92c9f0e.js" crossorigin="anonymous"></script>
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway"/>
     <title>Booki</title>
 </head>
 <body>
     <header>
-        <div class="blueRectangle"></div>
         <nav class="flex flex-r">
-            <img src="./image/logo/Booki.png" alt="logoBooki" id="bookiLogo">
-            <div class="policeRal ">
-                <a href="#">Hebergements</a>
-                <a href="#">Activités</a>
+            <img src="./image/logo/Booki.png" alt="logoBooki" class="booki">
+            <div class="policeW400 " >
+                <span><a href="#hebergement">Hebergements</a></span>
+                <span><a href="#activite">Activités</a></span>
+                <!-- <div class="blueRectangle"></div> -->
             </div>
         </nav>
-        <div id="searchHome">
-            <p class="policeW700 policeRal">Trouvez votre hébergement pour des vacances de rêve</p>
-             <p class="policeW400 policeRal">En plein centre-ville ou en pleine nature</p>
+        <div class="searchHome">
+            <p class="policeW700 ">Trouvez votre hébergement pour des vacances de rêve</p>
+             <p class="policeW400 ">En plein centre-ville ou en pleine nature</p>
         </div>
-        <form action="#" method="post" id="search" class="flex flex-r">
+        <form action="#" method="post" class="flex flex-r search">
             <div class="flex"><i class="fa-solid fa-location-dot"></i></div>
-            <div><input type="text" /></div>
+            <div><input type="text"  placeholder="Marseille, France" /></div>
              <div><input type="submit"  value="Rechercher"/></div>
-             <div class="submitPhoneSize"><input type="submit" value=""/> <i class="fa-solid fa-magnifying-glass"></i></div>
+             <div class="submitPhoneSize"><input type="submit"/> <i class="fa-solid fa-magnifying-glass"></i></div>
         </form>
 
-       <div id="filtre" class="flex flex-r">
+       <div  class=" filtre flex flex-r">
             <h1>Filtres</h1>
             <ul class="flex flex-r">
                 <li><i class="fa-solid fa-money-bill-wave"></i>Economique</li>
@@ -38,18 +39,18 @@
             </ul>
        </div>
       
-       <p id="info" class="policeRal policeW400"><i class="fa-solid fa-info"></i> Plus de 500 logements sont disponibles dans cette ville</p>
+       <p class="info policeW400 flex flex-r"><span><i class="fa-solid fa-info"></i></span> Plus de 500 logements sont disponibles dans cette ville</p>
     </header>
     <main>
         <div id="hebergement" class="flex flex-r">
-            <section  class="flex flex-c" id="marseilleHome">
-                <h3>Hébergements à Marseille</h3>
-                <div class="flex flex-r">                    
+            <section  class="flex flex-c marseilleHome">
+                <h3 class="policeW700">Hébergements à Marseille</h3>
+                <div class="flex flex-r describMarseille">                    
                     <article class="flex flex-c">
-                        <img src="./image/hebergements/3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg"  />
+                        <img src="./image/hebergements/3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="hebergement"  >
                         <div >
                             <h4>Auberge La Canebière</h4>
-                            <p>Nuit à partir de 25€</p>
+                            <p class="policeW400" >Nuit à partir de 25<span class="euro">€</span></p>
                             <ul class="flex flex-r">
                                 <li><i class="fa-solid fa-star"></i></li>
                                 <li><i class="fa-solid fa-star"></i></li>
@@ -60,10 +61,10 @@
                         </div>
                     </article>
                     <article>
-                        <img src="./image/hebergements/3_medium/aw-creative-VGs8z60yT2c-unsplash.jpg" />
+                        <img src="./image/hebergements/3_medium/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="hebergement" />
                         <div >
                             <h4>Hotel du port</h4>
-                            <p>nuit à partir de 52€</p>
+                            <p class="policeW400">nuit à partir de 52<span class="euro">€</span></p>
                             <ul class="flex flex-r">
                                 <li><i class="fa-solid fa-star"></i></li>
                                 <li><i class="fa-solid fa-star"></i></li>
@@ -74,10 +75,10 @@
                         </div>
                     </article>
                     <article>
-                        <img src="./image/hebergements/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" />
+                        <img src="./image/hebergements/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"  alt="hebergement"/>
                         <div >
                             <h4>Hôtel les mouettes</h4>
-                            <p>nuit à partir de 76€</p>
+                            <p>nuit à partir de 76<span class="euro">€</span></p>
                             <ul class="flex flex-r">
                                 <li><i class="fa-solid fa-star"></i></li>
                                 <li><i class="fa-solid fa-star"></i></li>
@@ -88,10 +89,10 @@
                         </div>
                     </article>
                     <article>
-                        <img src="./image/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" />
+                        <img src="./image/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"  alt="hebergement"/>
                         <div >
                             <h4>Hôtel de la mer</h4>
-                            <p>nuit à partir de 46€</p>
+                            <p class="policeW400">nuit à partir de 46<span class="euro">€</span></p>
                             <ul class="flex flex-r">
                                 <li><i class="fa-solid fa-star"></i></li>
                                 <li><i class="fa-solid fa-star"></i></li>
@@ -102,10 +103,10 @@
                         </div>
                     </article>
                     <article>
-                        <img src="./image/hebergements/3_medium/febrian-zakaria-sjvU0THccQA-unsplash.jpg" />
+                        <img src="./image/hebergements/3_medium/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="hebergement"/>
                         <div >
                             <h4>Auberge le Panier</h4>
-                            <p>nuit à partir de 23€</p>
+                            <p>nuit à partir de 23<span class="euro">€</span></p>
                             <ul class="flex flex-r">
                                 <li><i class="fa-solid fa-star"></i></li>
                                 <li><i class="fa-solid fa-star"></i></li>
@@ -116,10 +117,10 @@
                         </div>
                     </article>
                     <article>
-                        <img src="./image/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg" />
+                        <img src="./image/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="hebergement" />
                         <div >
                             <h4>Hôtel Chez Amina</h4>
-                            <p>nuit à partir de 95€</p>
+                            <p class="policeW400">nuit à partir de 95<span class="euro">€</span></p>
                             <ul class="flex flex-r">
                                 <li><i class="fa-solid fa-star"></i></li>
                                 <li><i class="fa-solid fa-star"></i></li>
@@ -130,21 +131,21 @@
                         </div>
                     </article>
                 </div>
-                <p id="seemore" class="policeRal policeW700">Afficher plus</p>
+                <p  class="seemore policeW700">Afficher plus</p>
             </section>
-            <section id="secPopular">
-                <div id="popular" class="flex flex-r">
-                    <h3>Les plus populaires</h3>
+            <section class="secPopular">
+                <div  class="flex flex-r popular">
+                    <h3 class="policeW700">Les plus populaires</h3>
                     <i class="fa-solid fa-chart-line"></i>
                 </div>
     
-                <div class="flex flex-c " id="contentPopular">
+                <div class="flex flex-c contentPopular" >
                     <article  class="flex flex-r">
-                        <img src="./image/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg" />
-                        <div id="cardPopular">
+                        <img src="./image/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="hebergement" />
+                        <div>
                             <div>                                 
                                 <h4>Hôtel Le soleil du matin</h4>
-                                <p>nuit à partir de 128€</p>
+                                <p class="policeW400">nuit à partir de 128<span class="euro">€</span></p>
                             </div>
                             <ul class="flex flex-r">
                                 <li><i class="fa-solid fa-star"></i></li>
@@ -156,11 +157,11 @@
                         </div>
                     </article>
                     <article  class="flex flex-r">
-                        <img src="./image/hebergements/3_medium/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" />
+                        <img src="./image/hebergements/3_medium/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="hebergement" />
                         <div >
                             <div>
                                 <h4>Chambre d'hôtes Au cœur de l'eau</h4>
-                                <p>nuit à partir de 71€</p>
+                                <p class="policeW400">nuit à partir de 71<span class="euro">€</span></p>
                             </div>
                             <ul class="flex flex-r">
                                 <li><i class="fa-solid fa-star"></i></li>
@@ -172,11 +173,11 @@
                         </div>
                     </article>
                     <article  class="flex flex-r">
-                        <img src="./image/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg" />
+                        <img src="./image/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="hebergement"/>
                         <div >
                             <div>
                                 <h4>Hôtel Bleu et BLanc</h4>
-                               <p>nuit à partir de 68€</p>
+                               <p class="policeW400">nuit à partir de 68<span class="euro">€</span></p>
                             </div>
                             <ul class="flex flex-r">
                                 <li><i class="fa-solid fa-star"></i></li>
@@ -192,47 +193,47 @@
             </section>
         </div>
         <section id="activite">
-            <h5 class="policeRal policeW700">Activités à Marseille</h5>
+            <h5 class=" policeW700">Activités à Marseille</h5>
             <div  class="flex flex-r">
                 <article class="flex flex-c">
-                    <img src="./image/activites/1_xlarge/florian-wehde-xW9e8gdotxI-unsplash.jpg" />
-                    <i class="policeRal policeW400">Notre-Dame-de-la-Garde</i>
+                    <img src="./image/activites/1_xlarge/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="activitées" />
+                    <h6 class=" policeW400">Notre-Dame-de-la-Garde</h6>
                 </article>
                 <article  class="flex flex-c">
-                    <img src="./image/activites/1_xlarge/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" />
-                    <i class="policeRal policeW400">Parc national des Calanques</i>
+                    <img src="./image/activites/1_xlarge/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="activitées" />
+                    <h6 class=" policeW400">Parc national des Calanques</h6>
                 </article>
                 <article  class="flex flex-c">
-                    <img src="./image/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg"/>
-                    <i class="policeRal policeW400">Fort de Pomégues</i>
+                    <img src="./image/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="activitées"/>
+                    <h6 class=" policeW400">Fort de Pomégues</h6>
                 </article>
                 <article  class="flex flex-c">
-                    <img src="./image/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"  />
-                    <i class="policeRal policeW400">Vieux-Port</i>
+                    <img src="./image/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"  alt="activitées"/>
+                    <h6 class=" policeW400">Vieux-Port</h6>
                 </article>
             </div>
         </section>
 
     </main>
     <footer  class="flex flex-r">
-        <div class="policeRal policeW400">
+        <div>
             <h6>À propos</h6>
-            <ul  class="flex flex-c">
+            <ul  class="flex flex-c policeW400">
                 <li>Fonctionnement du site</li>
                 <li>Conditions générales</li>
                 <li>Données et confidencialité</li>
             </ul>
         </div>
-        <div class="policeRal policeW400">
+        <div >
             <h6>Nos Hebergements</h6>
-            <ul  class="flex flex-c">
+            <ul  class="flex flex-c policeW400">
                 <li>Charte qualité</li>
                 <li>Prposer votre Hôtel</li>
             </ul>
         </div>
-        <div class="policeRal policeW400">
+        <div >
             <h6>Assistance</h6>
-            <ul  class="flex flex-c">
+            <ul  class="flex flex-c policeW400">
                 <li>Centre d'aide</li>
                 <li>Nous contacter</li>
             </ul>

@@ -1,9 +1,10 @@
-@font-face {
+/* @font-face {
 	font-family: 'Raleway';
 	src: url('../Raleway-Black.ttf') format('ttf') ;
 	font-weight: 100 1000;
 	font-stretch: 25% 151%;
-}
+} */
+
 *{
     list-style: none;
     list-style-type: none;
@@ -11,37 +12,54 @@
     padding:0;
     text-decoration: none;
     border:none;
-   
+    font-family: 'Raleway';
+    font-style: normal;
 }
 body{
-    max-width: 1400px;
+    margin:0 auto;
+    max-width: 1440px;
 }
     /* police */
-.policeRal{ font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 300;
+article h4,#activite i{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+}
+.seemore,footer h6,form input{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
 }
 .policeW700{
     font-weight: 700;
     font-size: 22px;
     line-height: 26px;
-    
+  
     }
-    img{
+img{
         object-fit: cover;
     }
-    .policeW400{
-        font-weight: 400;
+.filtre ul,.filtre h1{
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 20px;
+}
+.policeW400{
+    font-weight: 400;
     font-size: 16px;
     line-height: 19px;
     }
-    .policeW500{
+.policeW500{
         font-weight: 500;
     font-size: 16px;
     line-height: 19px;
     }
+.euro{
+    font-weight: 600;
+    font-size: 14px;
+}
      /* border radius */
-article, #hebergement section{
+article, #hebergement section, #hebergement section:nth-child(1) article,.secPopular artic{
     border-radius: 20px;
 }
   /* box-shadow */
@@ -58,13 +76,19 @@ article{
 .flex-c{
     flex-direction: column;
 }
-            /* color */
- #hebergement section ul{
-    color:#0065FC
+            /* star */
+ 
+ #hebergement section ul li:not(:last-child) i{
+    display: inline-block;
+    width:12px;
+    height: 12px;
+    color:#0065FC;
+    margin-right: 5px;
  }
-/* body{
-    padding: 0 2.5% 0 2.5%;
-} */
+          /* white star */
+article ul li:last-child i{
+    color:#D9D9D9 !important;
+}
        /* margin side page  */
 main,header,footer{
     width:92%;
@@ -73,16 +97,7 @@ main,header,footer{
 
              /* Header */
 header{
-    padding-top:40px;;
-}
-
-.blueRectangle{   
-position: absolute;
-width: 162px;
-height: 2px;
-right:10% ;
-top: 0px;
-background-color:#0065FC ;
+    padding-top:0px;;
 }
 nav{
     justify-content: space-between;
@@ -90,31 +105,46 @@ nav{
 }
 nav div{
     font-family: 'Raleway';
-font-style: normal;
-font-weight: 500;   
+    font-style: normal;
+    font-weight: 500;   
     width:381px;
-    height: 19px;
-    text-align: right;
+    height: 59px;
+   
 }
-#bookiLogo{
+.booki{
     height: 19px;
+    padding-top: 40px;
 
 }
-nav div a:not(:nth-child(2)){
-    margin-right: 10%;
+
+nav div span{
+    display:inline-block;
+    width: 49%;
+    padding-top: 45px;
+    text-align: center;
+}
+nav div span:hover{
+    border-top:2px solid #0065FC ;
+}
+nav div a{
+    color: black;
+
+}
+nav div div{
+    position: relative;
 }
 
-#searchHome{
+.searchHome{
     margin: 20px 0 20px 0;
 }
        /* search bar */
 
-#search{
+.search{
     justify-content: flex-start;
     align-items: center;
 }
 
-#search div:nth-child(1){
+.search div:nth-child(1){
     height: 48px;
     width: 49px;
     border-radius:15px 0px 0px 15px; 
@@ -123,18 +153,23 @@ nav div a:not(:nth-child(2)){
     justify-content: center;
     align-items: center;
 }
-#search div:nth-child(1) i{
+.search div:nth-child(1) i{
     width: 18px;
     height: 18px;
 }
-#search div:nth-child(2) input{
-    width: 300px;
+.search div:nth-child(2) input::placeholder{
+    color:black;
+    
+}
+.search div:nth-child(2) input{
+    width: 280px;
     height: 48px; 
+    padding-left:20px;
     border-top: 2px solid #F2F2F2;
     border-bottom: 2px solid #F2F2F2;
 }
 
-#search div:nth-child(3) input{
+.search div:nth-child(3) input{
     height: 50px; 
     border-radius: 0 15px 15px 0;
     background-color: #0065FC;
@@ -145,37 +180,47 @@ nav div a:not(:nth-child(2)){
 
    /* Filtre */
 
-#filtre{
+.filtre{
     justify-content:flex-start;
     margin: 20px 0 20px 0;
 }
-#filtre h1{
+.filtre h1{
+    margin-top: 10px;
     margin-right:12px
 }
-#filtre ul{
+.filtre ul{
     justify-content: space-around;
 }
-#filtre ul li{
+.filtre ul li{
     border: 2px solid #D9D9D9;
     border-radius: 25px;
-    padding: 1% 10px 0 10px;
+    padding: 1% 10px 1% 10px;
     margin:0 12px 0 12px 
 }
+.filtre ul li:hover{
+    background-color:#DEEBFF ;
+}
 
-#filtre ul li i{
+.filtre ul li i{
     margin-right:6px;
     color:#0065FC
 }
-#info{
+.info{
     margin-bottom: 20px;
+    align-items: baseline;
 }
-#info .fa-solid{
+.info span{
    color:blue;
     border-radius: 50%;
-    width: 20px;
-    height: 20px;
-    text-align: center;
-    border:  2px solid #D9D9D9;
+    width: 24px;
+    height: 24px;
+    border:  1px solid #D9D9D9;
+    font-size: 10px;
+    line-height: 10px;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
     /* Main Hebergement */
@@ -192,41 +237,46 @@ nav div a:not(:nth-child(2)){
     width:63%;
     padding: 40px 40px 0 40px;
  }
- #hebergement section:nth-child(1) h3 , #hebergement section:nth-child(2) h3,#seemore{
+ .seemore{
+    margin-top:30px;
+ }
+ #hebergement section:nth-child(1) h3 , #hebergement section:nth-child(2) h3,.seemore{
     margin-bottom: 23px;  
  }
- #seemore{
-    font-size: 18px;
-    line-height: 21px;
- }
- #hebergement section:nth-child(1) div{
-    justify-content: space-between;
-    flex-wrap: wrap;
- }
+ 
  #hebergement section:nth-child(1) article{
     width: 28%;
-    height: 199px;
+    height: 193px;
     background: #FFFFFF;
-    border-radius: 20px;
     border: 3px solid #FFFFFF;
     margin-bottom: 30px;
  }
+ .describMarseille{
+    justify-content: space-between;
+    flex-wrap: wrap;
+ }
  #hebergement section:nth-child(1) article div{
     margin: 5px 0 0 14px;
-    line-height: 20px;
+   
+    height: 35%;
  }
- #hebergement section:nth-child(1) div img{
+ .marseilleHome ul{
+    position: relative;
+    top: 15px;
+ }
+ #hebergement section:nth-child(1) img{
     height:60%;
     width:100%;
     border-radius: 20px 20px 0 0;
+    display:block;
     
  }
 
        /* Hebergement Populaire */
-#popular{
+.popular{
     justify-content: space-between;
 }
-#popular i{
+.popular i{
     color: #0065FC;
 }
 #hebergement section:nth-child(2) ul{
@@ -240,21 +290,20 @@ nav div a:not(:nth-child(2)){
     background-color:#F2F2F2;
  }
  
- #contentPopular{
+ .contentPopular{
     justify-content: space-between;
     height: 520px;
     width: 100%; 
  }
- #secPopular article div div{
+ .secPopular article div div{
     height: 20%;
     margin: 10px 0 0 20px;
  }
 
  
- #secPopular article{  
+ .secPopular article{  
     height: 144px;
     background: #FFFFFF;
-    border-radius: 20px;
     border: 0.2em solid #FFFFFF;
  }
 #hebergement section:nth-child(2) img{
@@ -263,7 +312,9 @@ nav div a:not(:nth-child(2)){
 }
 
 /* activité */
-
+#activite{
+    margin-top: 60px;
+}
 #activite div{
     justify-content: space-between;
 }
@@ -282,7 +333,7 @@ nav div a:not(:nth-child(2)){
 #activite h5{
     margin-bottom:20px;
 }
-#activite div article i{
+#activite div article h6{
     font-style: none;
     margin: 10px 0 0 10px
     
@@ -301,12 +352,6 @@ footer{
     
 }
 footer h6{ 
-
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 21px;
     margin-bottom: 10px;
 }
 footer div:nth-child(2){
@@ -318,14 +363,8 @@ a:hover{
 
       /* hidden content */
 .submitPhoneSize{display:none;}
-
-         /* white star */
-article ul li:last-child{
-    color:#D9D9D9;
-}
-   /* responsove Tablette */
-
-   @media  (max-width: 992px) {
+  /* responsove Tablette */
+@media  (max-width: 992px) {
     #hebergement{
         flex-direction: column ;
         justify-content: space-between;
@@ -353,15 +392,18 @@ article ul li:last-child{
     #hebergement section:nth-child(2) article{
         width: 32%;
     }
-   }
-   @media (max-width:768px) {
+}
+@media (max-width:768px) {
     main{width:100%}
             /* header */
     header{
                 width: 100%;
             }
-    #filtre h1, header p {
+    .filtre h1, header p {
         margin-left: 20px;
+    }
+    .filtre h1{
+        margin-bottom: 15px;
     }
                 /* nav */
     nav{
@@ -373,25 +415,28 @@ article ul li:last-child{
     }
     nav div{
         width: 100%;
+        height:fit-content;
+        margin-top: 30px;
         display: flex;
         justify-content: space-around;
-        height: 23px;
-
     }
-    nav div a:nth-child(1){
-        border-bottom: 2px blue solid;
-    }
-    nav div a{
-        margin-right: 0 !important;
+    nav div a{     
         text-align: center;
-        width: 100%;
-        border-bottom: 3px #F2F2F2 solid;
-        
-
+        width: 100%;        
+    }
+    nav div span {
+        padding:0 0 20px 0;
+        border-bottom:2px solid lightgrey;
+        width: 50%;
+      
+    }
+    nav div span:hover{
+        border-bottom-color: #0065FC;
+        border-top-color: transparent;
     }
             /* form search bar */
     header form{
-                width: 95%;
+                width: 89%;
                 margin: 0 auto;
             }
     header form div:nth-child(3){
@@ -407,6 +452,14 @@ article ul li:last-child{
         border-bottom: 3px #F2F2F2 solid !important;
         height: 46px !important;
     }
+    .fa-magnifying-glass{
+        position:absolute;
+    }
+    .submitPhoneSize input[type='submit']{
+        width: 10px;
+        background-color: #0065FC !important;
+        color:transparent
+    }
     .submitPhoneSize{
         display:block;
         height: 50px;
@@ -414,28 +467,42 @@ article ul li:last-child{
         background-color: #0065FC;
         color: #F2F2F2;
         font-size: 22px;
-        width: 10%;
+        width: 50px;
         display: flex;
         justify-content: center;
         align-items: center;
         
     }
-    .submitPhoneSize input{
-        margin-top: 0px;
-    }
+    
+    
       /* Filtre */
-      #filtre{
+      .filtre{
         flex-direction: column !important;
       }
-      #filtre  ul{
-        justify-content: space-between;
+      .filtre  ul{
+        justify-content: space-around;
         flex-wrap: wrap;
+        font-weight: 700;
+        font-size: 11px;
+        line-height: 12.91px;
       }
-      #filtre ul li{
-        width: 40%;
+      .filtre ul li{
+        display: flex;
+        align-items: center;
+        width: 41%;
        padding:12px 0 12px 12px;
         border-radius: 25px;
         margin-top: 15px;
+        margin: 0 0 15px 0;
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 11px;
+        line-height: 13px;
+      }
+      .filtre ul li i{
+        font-size: 22px;
+        line-height: 22px;
       }
        /* hebergement */
 
@@ -445,20 +512,20 @@ article ul li:last-child{
         
        }
        /* popular */
-       #secPopular{
+       .secPopular{
         height: 580px !important;
         width: 96% !important;
         padding: 40px 2% 0 2% !important;
        max-width: none !important;
        border-radius: 0 !important;
        }
-      #secPopular div:nth-child(2){
+      .secPopular div:nth-child(2){
         flex-direction: column !important;
-        width:99% !important
+        width:100% !important
       }
 
-      #secPopular div:nth-child(2) article{
-        width: 100%;
+      .secPopular div:nth-child(2) article{
+        width: 98% !important;
         margin-bottom: 15px;
       }
 
@@ -473,7 +540,7 @@ article ul li:last-child{
         width: 100%;
         box-shadow: 1px 1px 8px -3px;
       }
-      #seemore{
+      .seemore{
         display: none;
       }
 
@@ -520,7 +587,4 @@ article ul li:last-child{
        .fa-chart-line{
         display:none;
        }
-       .fa-info{
-        display:none;
-       }
-   }
+}
