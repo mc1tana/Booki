@@ -1,9 +1,9 @@
-/* @font-face {
+/*@font-face {
 	font-family: 'Raleway';
-	src: url('../Raleway-Black.ttf') format('ttf') ;
+	src: url('Raleway-Black.ttf') format('ttf');
 	font-weight: 100 1000;
 	font-stretch: 25% 151%;
-} */
+}*/
 
 *{
     list-style: none;
@@ -20,7 +20,7 @@ body{
     max-width: 1440px;
 }
     /* police */
-article h4,#activite i{
+article h4,#activite h6 {
     font-weight: 700;
     font-size: 16px;
     line-height: 19px;
@@ -257,21 +257,21 @@ nav div div{
  }
  #hebergement section:nth-child(1) article div{
     margin: 5px 0 0 14px;
-   
     height: 35%;
  }
  .marseilleHome ul{
     position: relative;
-    top: 15px;
+    top: 5px;
  }
  #hebergement section:nth-child(1) img{
     height:60%;
     width:100%;
     border-radius: 20px 20px 0 0;
-    display:block;
-    
+    display:block;  
  }
-
+ .marseilleHome .policeW400{
+        margin-top: 5px;
+ }
        /* Hebergement Populaire */
 .popular{
     justify-content: space-between;
@@ -281,8 +281,11 @@ nav div div{
 }
 #hebergement section:nth-child(2) ul{
     position: relative;
-    top: 85px;
+    top: 78px;
     margin-left: 20px;
+}
+.secPopular p{
+    margin-top: 5px;
 }
  #hebergement section:nth-child(2){
     width:24%;
