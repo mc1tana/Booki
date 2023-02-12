@@ -99,6 +99,7 @@ main,header,footer{
 header{
     padding-top:0px;;
 }
+
 nav{
     justify-content: space-between;
     margin-bottom: 20px;
@@ -136,6 +137,9 @@ nav div div{
 
 .searchHome{
     margin: 20px 0 20px 0;
+}
+.searchHome p{
+    margin-bottom: 10px;
 }
        /* search bar */
 
@@ -194,7 +198,7 @@ nav div div{
 .filtre ul li{
     border: 2px solid #D9D9D9;
     border-radius: 25px;
-    padding: 1% 10px 1% 10px;
+    padding: 1% 15px 1% 15px;
     margin:0 12px 0 12px 
 }
 .filtre ul li:hover{
