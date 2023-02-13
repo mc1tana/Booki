@@ -228,13 +228,19 @@ nav div div{
 }
 
     /* Main Hebergement */
+
  #hebergement{
     justify-content: space-between;   
     height: 626px;
  }
+ #hebergement section article a,#activite div  a{
+    color:black;
+    display:contents;
+ }
  #hebergement section{
     background-color: #F2F2F2;
     padding-top:44px;
+    color:black
 
  }
  #hebergement section:nth-child(1){
@@ -254,6 +260,7 @@ nav div div{
     background: #FFFFFF;
     border: 3px solid #FFFFFF;
     margin-bottom: 30px;
+    
  }
  .describMarseille{
     justify-content: space-between;
@@ -268,10 +275,9 @@ nav div div{
     top: 5px;
  }
  #hebergement section:nth-child(1) img{
-    height:60%;
+    max-height:60%;
     width:100%;
     border-radius: 20px 20px 0 0;
-    display:block;  
  }
  .marseilleHome .policeW400{
         margin-top: 5px;
@@ -325,7 +331,8 @@ nav div div{
 #activite div{
     justify-content: space-between;
 }
-#activite div article{
+
+#activite div article {
     width: 21%;
     height:444px;
     box-shadow: 0px 0px 8px -3px black;
@@ -341,7 +348,7 @@ nav div div{
     margin-bottom:20px;
 }
 #activite div article h6{
-    font-style: none;
+    font-style:normal;
     margin: 10px 0 0 10px
     
 }
