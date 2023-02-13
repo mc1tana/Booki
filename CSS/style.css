@@ -347,6 +347,7 @@ nav div div{
 #activite h5{
     margin-bottom:20px;
 }
+#activite h5 br{display: none;}
 #activite div article h6{
     font-style:normal;
     margin: 10px 0 0 10px
@@ -578,7 +579,7 @@ a:hover{
          #activite div article img{
             height: 80%;
          }
-         
+         #activite h5 br{display: block;}
       /* footer */
 
       footer{
