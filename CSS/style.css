@@ -119,9 +119,10 @@ nav div{
 
 nav div span{
     display:inline-block;
-    width: 49%;
+    width: 48%;
     padding-top: 45px;
     text-align: center;
+    border-top:2px solid transparent
 }
 nav div span:hover{
     border-top:2px solid #0065FC ;
